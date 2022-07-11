@@ -100,6 +100,12 @@ nav{
     color: var(--primary-pink);
     transform: translateY(-3px);
 }
+
+@media (max-width: 992px) {
+    .nav-item:hover::before{
+        transform: scale(0);
+    }
+}
 /*end navbar*/
 /*end header section*/
 
