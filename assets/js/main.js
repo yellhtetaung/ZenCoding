@@ -1,30 +1,30 @@
 $(document).ready(function (){
     // for nav
-    let header = $("#navBar");
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', function() {
-        let currentScroll = window.pageYOffset;
-
-        if (currentScroll <= 0) {
-            header.removeClass("scroll-ups");
-        }
-
-        if (currentScroll > lastScroll && !header.hasClass("scroll-downs")) {
-            header.removeClass("scroll-ups");
-            header.addClass("scroll-downs");
-        }
-
-        if (currentScroll < lastScroll && header.hasClass("scroll-downs")) {
-            header.removeClass("scroll-downs");
-            header.addClass("scroll-ups");
-        }
-
-
-        lastScroll = currentScroll;
-
-
-    });
+    // let header = $("#navBar");
+    // let lastScroll = 0;
+    //
+    // window.addEventListener('scroll', function() {
+    //     let currentScroll = window.pageYOffset;
+    //
+    //     if (currentScroll <= 0) {
+    //         header.removeClass("scroll-ups");
+    //     }
+    //
+    //     if (currentScroll > lastScroll && !header.hasClass("scroll-downs")) {
+    //         header.removeClass("scroll-ups");
+    //         header.addClass("scroll-downs");
+    //     }
+    //
+    //     if (currentScroll < lastScroll && header.hasClass("scroll-downs")) {
+    //         header.removeClass("scroll-downs");
+    //         header.addClass("scroll-ups");
+    //     }
+    //
+    //
+    //     lastScroll = currentScroll;
+    //
+    //
+    // });
    // end nav
 
     // for typingText
