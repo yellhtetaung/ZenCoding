@@ -4,12 +4,10 @@ $(document).ready(function (){
     let lastScroll = 0;
 
     window.addEventListener('scroll', function() {
-        header.addClass('fixed-top')
         let currentScroll = window.pageYOffset;
 
         if (currentScroll <= 0) {
             header.removeClass("scroll-ups");
-            header.removeClass('fixed-top');
         }
 
         if (currentScroll > lastScroll && !header.hasClass("scroll-downs")) {

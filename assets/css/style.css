@@ -136,6 +136,9 @@ nav{
     .banners .row{
         flex-direction: column-reverse;
     }
+    .banners img{
+        width: 80%;
+    }
 }
 /*end banner*/
 
