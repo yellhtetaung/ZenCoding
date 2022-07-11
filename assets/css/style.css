@@ -208,7 +208,7 @@ nav{
     color: #ffffff;
     background: none;
     border: 0;
-    border-bottom: 2px solid var(--primary-pink);
+    border-bottom: 2px solid var(--bs-primary);
 
     transition: all 0.3s;
 }
@@ -218,6 +218,7 @@ nav{
 }
 
 .form-control:focus{
+    border-color: var(--bs-danger);
     background: none;
     box-shadow: none;
 }
