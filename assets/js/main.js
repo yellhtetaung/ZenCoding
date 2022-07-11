@@ -91,6 +91,12 @@ $(document).ready(function (){
         $(this).css('border','none')
     });
 
+    // for contact
+    const contactInfo = $('.contact-info').tilt({
+        perspective: 900,
+        maxGlare: 2
+    });
+
 
     // for aos
     AOS.init({
