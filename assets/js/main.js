@@ -11,7 +11,7 @@ $(document).ready(function (){
             header.removeClass("scroll-downs");
         }
 
-        if (currentScroll > 200 && !header.hasClass("scroll-downs")) {
+        if (currentScroll > 100 && !header.hasClass("scroll-downs")) {
             header.removeClass("scroll-ups");
             header.addClass("scroll-downs");
         }
