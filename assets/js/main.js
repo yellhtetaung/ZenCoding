@@ -1,4 +1,29 @@
 $(document).ready(function (){
+
+    // for lightmode & darkmode
+    $('.modebtn').click(function (){
+        if($(this).children().hasClass('fa-moon')){
+            $('body').addClass('lightmode');
+            $(this).children().addClass('fa-sun');
+            $(this).children().removeClass('fa-moon');
+            $(this).removeClass('btn-light');
+            $(this).addClass('btn-dark');
+            $(this).children().addClass('text-white');
+            $(this).children().removeClass('text-dark');
+        } else {
+            $('body').removeClass('lightmode');
+            $(this).children().addClass('fa-moon');
+            $(this).children().removeClass('fa-sun');
+            $(this).removeClass('btn-dark');
+            $(this).addClass('btn-light');
+            $(this).children().addClass('text-dark');
+            $(this).children().removeClass('text-white')
+        }
+    })
+
+
+
+
     // for nav
     let header = $("#navBar");
     let lastScroll = 0;
@@ -21,12 +46,7 @@ $(document).ready(function (){
             header.addClass("scroll-ups");
         }
 
-
         lastScroll = currentScroll;
-
-        console.log(lastScroll)
-
-
     });
    // end nav
 
@@ -51,6 +71,7 @@ $(document).ready(function (){
     $('.projectLists').click(function (){
         $(this).addClass('btn-primary').siblings().removeClass('btn-primary');
         $(this).removeClass('noactive').siblings().addClass('noactive');
+        $('#changeWidth').removeAttr('data-aos');
 
         let getAttValue = $(this).attr('data-filter');
 

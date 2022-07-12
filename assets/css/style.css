@@ -18,6 +18,25 @@ body{
     overflow-x: hidden;
 }
 
+.modebtn{
+    position: fixed;
+    right: 2%;
+    bottom: 6%;
+
+    z-index: 1000;
+
+    transition: all 0.5s;
+}
+
+.modebtn i{
+    color: #000000;
+}
+
+.modebtn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
 .translateTop{
     transition: all 0.5s;
     cursor: pointer;
@@ -25,6 +44,22 @@ body{
 
 .translateTop:hover{
     transform: translateY(-10px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title,
+label
+{
+    color: #ffffff;
+}
+
+p{
+    color: var(--bs-secondary);
 }
 
 /*start header section*/
@@ -47,8 +82,13 @@ nav{
 }
 
 .navbar-brand{
+    color: #ffffff;
     font-size: 25px;
     font-family: var(--font-merri);
+}
+
+.navbar-brand:hover{
+    color: #ffffff;
 }
 
 .nav-item{
@@ -87,6 +127,10 @@ nav{
     transform: translateY(-3px);
 }
 
+.navbar-toggler{
+    color: #ffffff;
+}
+
 .navbar-toggler:focus{
     box-shadow: none;
 }
@@ -97,7 +141,7 @@ nav{
 }
 
 .contacticons:hover{
-    color: var(--primary-pink);
+    color: #ffffff;
     transform: translateY(-3px);
 }
 
@@ -122,14 +166,18 @@ nav{
 }
 
 .banners h1{
+    color: var(--bs-light);
     font-family: var(--font-merri);
     font-weight: 800;
     letter-spacing: 2px;
 }
 
+.banners h1 #typing, .typed-cursor{
+    color: var(--bs-warning);
+}
+
 .banners p{
     font-size: 15px;
-    color: #e7e7e7e7;
 }
 
 @media (max-width: 992px) {
@@ -142,6 +190,13 @@ nav{
 }
 /*end banner*/
 
+/*start about*/
+
+#about .card{
+    background: var(--bs-dark);
+}
+
+/*end about*/
 /*start Education*/
 
 .educards{
@@ -150,6 +205,10 @@ nav{
 /*end Education*/
 
 /*start Portfolio*/
+
+#portfolio a{
+    color: #ffffff;
+}
 
 .portfolio-cards a{
     right: 10%;
@@ -200,9 +259,18 @@ nav{
     object-position: top;
 }
 
+#portfolio .list-inline-item{
+    color: #ffffff;
+}
+
 /*end Project*/
 
 /*start contact*/
+
+#contact .fa-solid, #contact .fa-brands{
+    color: #ffffff;
+}
+
 .form-control{
     font-size: 15px;
     color: #ffffff;
@@ -214,10 +282,16 @@ nav{
 }
 
 .form-control.noborder{
+    background: var(--bs-dark);
     border-bottom: 0;
 }
 
+.form-control.noborder:focus{
+    background: var(--bs-dark);
+}
+
 .form-control:focus{
+    color: #ffffff;
     border-color: var(--bs-danger);
     background: none;
     box-shadow: none;

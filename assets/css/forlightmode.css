@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-merri: 'Merriweather', serif;
+    --primary-blue: #28c7fa;
+    --primary-violet: #775ada;
+    --primary-darkblue: #002651;
+    --primary-pink: #ff304f;
+}
+
+
+/*for lightMode*/
+.lightmode {
+    background: #f4f4f4;
+}
+
+.lightmode nav {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+}
+
+.lightmode p {
+    color: var(--bs-secondary);
+}
+
+.lightmode .navbar-brand,
+.lightmode .nav-link,
+.lightmode .navbar-toggler,
+.lightmode .collapse .fa-brands,
+.lightmode .collapse .d-flex a,
+.lightmode .banners h1,
+.lightmode #about h2,
+.lightmode #about h4,
+.lightmode .card-title,
+.lightmode .card h5,
+.lightmode .carousel-item h4,
+.lightmode .carousel h6,
+.lightmode #contact h3,
+.lightmode #contact label,
+.lightmode #project h2,
+.lightmode .fa-angle-left,
+.lightmode .fa-angle-right,
+.lightmode footer h6,
+.lightmode footer p,
+.lightmode #portfolio .list-inline-item,
+.lightmode #portfolio a,
+.lightmode .form-control,
+.lightmode .form-control:focus
+{
+    color: #000000;
+}
+
+.lightmode #about .card,
+.lightmode #education .card,
+.lightmode #portfolio .card {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+    box-shadow: 1rem 1.2rem 1.4rem rgba(0, 0, 0, 0.3);
+}
+
+.lightmode .form-control.noborder {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+}
+
+.lightmode .form-control.noborder {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+}
+
+.lightmode .banners h1 #typing,
+.lightmode .typed-cursor {
+    color: var(--bs-danger);
+}
