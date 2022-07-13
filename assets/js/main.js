@@ -71,12 +71,12 @@ $(document).ready(function (){
     $('.projectLists').click(function (){
         $(this).addClass('btn-primary').siblings().removeClass('btn-primary');
         $(this).removeClass('noactive').siblings().addClass('noactive');
-        $('#changeWidth').removeAttr('data-aos');
 
         let getAttValue = $(this).attr('data-filter');
 
         if(getAttValue === 'all') {
             $('.filters').show();
+            $('#changeWidth').attr('data-aos','fade-up');
         } else {
             $('.filters').hide();
             $('.filters').not('.'+getAttValue).hide();
@@ -86,6 +86,7 @@ $(document).ready(function (){
         if(getAttValue != 'all'){
             $('#changeWidth').addClass('col-lg-12');
             $('#changeWidth').removeClass('col-lg-8');
+            $('#changeWidth').removeAttr('data-aos');
             $('#changeWidth').children().children().addClass('col-lg-3');
             $('#changeWidth').children().children().removeClass('col-lg-5');
             if($('.filters').hasClass('d-none')){

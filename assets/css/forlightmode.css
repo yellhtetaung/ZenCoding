@@ -40,8 +40,6 @@
 .lightmode #project h2,
 .lightmode .fa-angle-left,
 .lightmode .fa-angle-right,
-.lightmode footer h6,
-.lightmode footer p,
 .lightmode #portfolio .list-inline-item,
 .lightmode #portfolio a,
 .lightmode .form-control,
@@ -57,6 +55,18 @@
     box-shadow: 1rem 1.2rem 1.4rem rgba(0, 0, 0, 0.3);
 }
 
+.lightmode #portfolio a, .lightmode #portfolio .fa-angle-right{
+    color: #ffffff;
+}
+
+.lightmode #portfolio .checkcode{
+    color: #000000;
+}
+
+.lightmode .contactinfo{
+    box-shadow: 1rem 1.2rem 1.4rem rgba(0, 0, 0, 0.3);
+}
+
 .lightmode .form-control.noborder {
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
 }
@@ -68,4 +78,8 @@
 .lightmode .banners h1 #typing,
 .lightmode .typed-cursor {
     color: var(--bs-danger);
+}
+
+.lightmode footer h6, .lightmode footer p{
+    color: #ffffff;
 }
