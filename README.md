@@ -5,7 +5,7 @@
 
 ## Demo
 ### netlify
-https://euphonious-moonbeam-6d0eb2.netlify.app/
+https://zencoding.netlify.app/
 ### github
 https://yellhtetaung.github.io/ZenCoding/
 
