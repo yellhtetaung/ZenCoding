@@ -21,9 +21,6 @@ $(document).ready(function (){
         }
     })
 
-
-
-
     // for nav
     let header = $("#navBar");
     let lastScroll = 0;
@@ -67,6 +64,14 @@ $(document).ready(function (){
         perspective: 900,
         maxGlare: 2
     });
+
+    const aboutImage = $('.about-images').tilt();
+
+    if($(window).width() < 480){
+        aboutImage.tilt.destroy.call(aboutImage);
+        demoCards.tilt.destroy.call(demoCards);
+    }
+
 
     $('.projectLists').click(function (){
         $(this).addClass('btn-primary').siblings().removeClass('btn-primary');
@@ -116,7 +121,7 @@ $(document).ready(function (){
 
     // for aos
     AOS.init({
-        duration: 2000,
+        duration: 2000
     });
 
 });
