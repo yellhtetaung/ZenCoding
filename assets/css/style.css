@@ -75,6 +75,7 @@ nav{
     background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.9));
     transition: all 0.5s;
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 }
 
 .scroll-downs{
