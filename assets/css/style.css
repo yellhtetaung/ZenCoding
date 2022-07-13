@@ -14,6 +14,7 @@ body{
     font-size: 15px;
     background: #020202;
     scroll-behavior: smooth;
+    user-select: none;
 
     overflow-x: hidden;
 }
