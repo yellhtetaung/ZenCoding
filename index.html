@@ -1,602 +1,1093 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Zen Coding</title>
 
     <!--Bootstrap css1 js1-->
-    <link href="./assets/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link
+      href="./assets/node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!--fontawesome css1-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--aos css1 js1-->
-    <link href="./assets/node_modules/aos/dist/aos.css" rel="stylesheet" type="text/css"/>
+    <link
+      href="./assets/node_modules/aos/dist/aos.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!--custom css-->
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css"/>
-    <link rel="stylesheet" href="./assets/css/forlightmode.css" type="text/css"/>
-</head>
-<body>
-
-    <button class="btn btn-light btn-lg rounded-circle modebtn"><i class="fa-solid fa-moon"></i></button>
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/forlightmode.css"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <button class="btn btn-light btn-lg rounded-circle modebtn">
+      <i class="fa-solid fa-moon"></i>
+    </button>
 
     <!--Start Header Section-->
     <header>
-        <!--Start nav-->
-        <nav id="navBar" class="navbar navbar-expand-lg fixed-top w-100 py-3">
-            <div class="container">
-                <a href="./index.html" class="navbar-brand text-uppercase me-lg-5">Zen Coding</a>
-                <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navmenu"><i class="fa-solid fa-bars"></i></button>
-                <div id="navmenu" class="collapse navbar-collapse justify-content-around">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#home" class="nav-link mx-md-3">Home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link mx-md-3">About</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link mx-md-3">Portfolios</a></li>
-                        <li class="nav-item"><a href="#project" class="nav-link mx-md-3">Projects</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link mx-md-3">Contact</a></li>
-                    </ul>
-                    <div class="d-flex">
-                        <a href="https://www.github.com/yellhtetaung" class="fs-5 mx-2 contacticons" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.facebook.com/yellhtet248/" class="fs-5 mx-2 contacticons" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/yellhtetaung_/" class="fs-5 mx-2 contacticons" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
+      <!--Start nav-->
+      <nav id="navBar" class="navbar navbar-expand-lg fixed-top w-100 py-3">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand text-uppercase me-lg-5"
+            >Zen Coding</a
+          >
+          <button
+            type="button"
+            class="navbar-toggler border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            id="navmenu"
+            class="collapse navbar-collapse justify-content-around"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#home" class="nav-link mx-md-3">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link mx-md-3">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link mx-md-3">Portfolios</a>
+              </li>
+              <li class="nav-item">
+                <a href="#project" class="nav-link mx-md-3">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link mx-md-3">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a
+                href="https://www.github.com/yellhtetaung"
+                class="fs-5 mx-2 contacticons"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/yellhtet248/"
+                class="fs-5 mx-2 contacticons"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/yellhtetaung_/"
+                class="fs-5 mx-2 contacticons"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
-        </nav>
-        <!--End nav-->
-
+          </div>
+        </div>
+      </nav>
+      <!--End nav-->
     </header>
     <!--End Header Section-->
 
     <!--Start banner-->
     <section id="home" class="banners min-vh-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
-                    <h5 class="my-4 text-primary">Hello Welcome</h5>
-                    <h1 class="my-4 display-4">I'm <span id="typing"></span></h1>
-                    <p class="pe-5">Building a successful product is a challenge. I am highly energetic in user interfaces , font-end development and web development.</p>
-                    <div class="mt-3">
-                        <a href="#contact" class="btn btn-danger me-3">Contact Me</a>
-                        <a href="#portfolio" class="btn btn-outline-danger"><i class="fa-solid fa-layer-group"></i> portfolio</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 p-3 d-flex d-lg-block align-items-center mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="500">
-                    <img src="./assets/img/bannerimage.svg" class="mt-5 mt-lg-0 mx-auto" width="100%" alt="banner"/>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center"
+            data-aos="fade-up"
+          >
+            <h5 class="my-4 text-primary">Hello Welcome</h5>
+            <h1 class="my-4 display-4">I'm <span id="typing"></span></h1>
+            <p class="pe-5">
+              Building a successful product is a challenge. I am highly
+              energetic in user interfaces , font-end development and web
+              development.
+            </p>
+            <div class="mt-3">
+              <a href="#contact" class="btn btn-danger me-3">Contact Me</a>
+              <a href="#portfolio" class="btn btn-outline-danger"
+                ><i class="fa-solid fa-layer-group"></i> portfolio</a
+              >
             </div>
+          </div>
+          <div
+            class="col-lg-6 p-3 d-flex d-lg-block align-items-center mt-5 mt-lg-0"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <img
+              src="./assets/img/bannerimage.svg"
+              class="mt-5 mt-lg-0 mx-auto"
+              width="100%"
+              alt="banner"
+            />
+          </div>
         </div>
+      </div>
     </section>
     <!--End banner-->
 
     <!--Start About-->
     <section id="about" class="py-5">
-        <!--start myinfo-->
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center py-4" data-aos="fade-up">
-                    <img src="./assets/img/aboutphoto.png" class="rounded-5 about-images" width="350px" alt="myphoto"/>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row" data-aos="fade-up" data-aos-delay="500">
-                        <div class="col-12">
-                            <h5 class="text-primary my-5">About me</h5>
-                            <h2 class="display-5 mb-4">Who am i ?</h2>
-                            <p class="text-secondary">This is Yell Htet Aung. I have highly experience in web development. I hard try to get the best one website and web application. I always learn programming in everyday. Thank you. Have a great day.</p>
+      <!--start myinfo-->
+      <div class="container my-5">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center py-4"
+            data-aos="fade-up"
+          >
+            <img
+              src="./assets/img/aboutphoto.png"
+              class="rounded-5 about-images"
+              width="350px"
+              alt="myphoto"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="row" data-aos="fade-up" data-aos-delay="500">
+              <div class="col-12">
+                <h5 class="text-primary my-5">About me</h5>
+                <h2 class="display-5 mb-4">Who am i ?</h2>
+                <p class="text-secondary">
+                  This is Yell Htet Aung. I have highly experience in web
+                  development. I hard try to get the best one website and web
+                  application. I always learn programming in everyday. Thank
+                  you. Have a great day.
+                </p>
 
-                            <div class="row mt-5 align-items-center">
-                                <div class="col-6">
-                                    <h4>2 years</h4>
-                                    <p class="text-secondary">of experiences learning</p>
-                                </div>
-                                <div class="col-6">
-                                    <a href="https://drive.google.com/file/d/1d3vTI-_HXEn9OiERT3Fs2Y0VQHC_A4ez/view?usp=sharing" class="btn btn-primary fw-light" target="_blank">Download CV</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5" data-aos="flip-down" data-aos-delay="1000">
-                        <div class="col-sm-6 mb-3">
-                            <div class="card rounded-3 translateTop">
-                                <div class="row align-items-center">
-                                    <div class="col-10">
-                                        <div class="card-body">
-                                            <div class="card-title text-uppercase">Bright Technology Myanmar</div>
-                                            <p class="text-secondary card-text">certificae</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <p class="lead">1+</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 mb-3">
-                            <div class="card rounded-3 translateTop h-100">
-                                <div class="row align-items-center">
-                                    <div class="col-10">
-                                        <div class="card-body">
-                                            <div class="card-title text-uppercase">Data Land Technology</div>
-                                            <p class="text-secondary card-text">certificae</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <p class="lead">0</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row mt-5 align-items-center">
+                  <div class="col-6">
+                    <h4>2 years</h4>
+                    <p class="text-secondary">of experiences learning</p>
+                  </div>
+                  <div class="col-6">
+                    <a
+                      href="https://drive.google.com/file/d/1d3vTI-_HXEn9OiERT3Fs2Y0VQHC_A4ez/view?usp=sharing"
+                      class="btn btn-primary fw-light"
+                      target="_blank"
+                      >Download CV</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <!--end myinfo-->
-        <!--start skill-->
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-5" data-aos="fade-up">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h4 class="mb-3">HTML,CSS</h4>
-                        <p>80%</p>
+            <div class="row mt-5" data-aos="flip-down" data-aos-delay="1000">
+              <div class="col-sm-6 mb-3">
+                <div class="card rounded-3 translateTop">
+                  <div class="row align-items-center">
+                    <div class="col-10">
+                      <div class="card-body">
+                        <div class="card-title text-uppercase">
+                          Bright Technology Myanmar
+                        </div>
+                        <p class="text-secondary card-text">certificae</p>
+                      </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                    <div class="col-2">
+                      <p class="lead">1+</p>
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-5" data-aos="fade-up">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h4 class="mb-3">Javascript</h4>
-                        <p>60%</p>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="card rounded-3 translateTop h-100">
+                  <div class="row align-items-center">
+                    <div class="col-10">
+                      <div class="card-body">
+                        <div class="card-title text-uppercase">
+                          Data Land Technology
+                        </div>
+                        <p class="text-secondary card-text">certificae</p>
+                      </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                    <div class="col-2">
+                      <p class="lead">0</p>
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mb-5" data-aos="fade-up" data-aos-delay="500">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h4 class="mb-3">Bootstrap</h4>
-                        <p>50%</p>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 mb-5" data-aos="fade-up" data-aos-delay="500">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h4 class="mb-3">jQuery</h4>
-                        <p>50%</p>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!--end skill-->
+      </div>
+      <!--end myinfo-->
+      <!--start skill-->
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-5" data-aos="fade-up">
+            <div class="d-flex justify-content-between align-items-center">
+              <h4 class="mb-3">HTML,CSS</h4>
+              <p>80%</p>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-5" data-aos="fade-up">
+            <div class="d-flex justify-content-between align-items-center">
+              <h4 class="mb-3">Javascript</h4>
+              <p>60%</p>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                role="progressbar"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 60%"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 mb-5"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <h4 class="mb-3">Bootstrap</h4>
+              <p>50%</p>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 mb-5"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <h4 class="mb-3">jQuery</h4>
+              <p>50%</p>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end skill-->
     </section>
     <!--End About-->
 
     <!--Start education-->
     <section id="education" class="py-3">
-        <div class="container">
-            <h3 class="text-primary">Education</h3>
-            <div class="row my-5">
-                <div class="col-lg-8 mb-4" data-aos="fade-up">
-                    <div class="card bg-dark h-100 educards translateTop">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12 d-flex justify-content-between align-items-center my-4">
-                                    <h5 class="d-inline-block text-uppercase">Bright Technology Myanmar</h5>
-                                    <button type="button" class="btn btn-primary btn-sm">2020/6 - 2020/11</button>
-                                </div>
-                                <div class="col-12">
-                                    <h5>Web Essentials Course</h5>
-                                    <p class="text-secondary">June/ 2020 - November/ 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h3 class="text-primary">Education</h3>
+        <div class="row my-5">
+          <div class="col-lg-8 mb-4" data-aos="fade-up">
+            <div class="card bg-dark h-100 educards translateTop">
+              <div class="card-body">
+                <div class="row">
+                  <div
+                    class="col-12 d-flex justify-content-between align-items-center my-4"
+                  >
+                    <h5 class="d-inline-block text-uppercase">
+                      Bright Technology Myanmar
+                    </h5>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      2020/6 - 2020/11
+                    </button>
+                  </div>
+                  <div class="col-12">
+                    <h5>Web Essentials Course</h5>
+                    <p class="text-secondary">June/ 2020 - November/ 2020</p>
+                  </div>
                 </div>
-                <div class="col-lg-4 mb-4" data-aos="fade-up">
-                    <div class="card bg-dark educards translateTop">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12 d-flex justify-content-between align-items-center my-4">
-                                    <h5 class="d-inline-block text-uppercase">Bago University</h5>
-                                    <button type="button" class="btn btn-primary btn-sm">2016 - 2018</button>
-                                </div>
-                                <div class="col-12">
-                                    <h5>1st year Distance History</h5>
-                                    <p class="text-secondary">2016 - 2018</p>
-                                </div>
-                                <div class="col-12">
-                                    <h5>Intakaw B.E.H.S</h5>
-                                    <p class="text-secondary">study at 2014, passed University Entrance Exam</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 mb-4" data-aos="flip-up" data-aos-delay="1000">
-                    <div class="card bg-dark educards translateTop">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12 d-flex justify-content-between align-items-center my-4">
-                                    <h5 class="d-inline-block text-uppercase">Data Land Technology</h5>
-                                    <button type="button" class="btn btn-primary btn-sm">2021</button>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5>WDF</h5>
-                                    <p class="text-secondary">26/ Aug/ 2021 - 26/ May/ 2022</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5>jQuery</h5>
-                                    <p class="text-secondary">16/ May/ 2022 - dd/ mm/ yy</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5>BCJ-1</h5>
-                                    <p class="text-secondary">16/ June/ 2022 - dd/ mm/ yy</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5>CSS animation</h5>
-                                    <p class="text-secondary">7/ May/ 2022 - dd/ mm/ yy</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 mb-4" data-aos="flip-up" data-aos-delay="1000">
-                    <div class="card bg-dark h-100 educards translateTop">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12 d-flex justify-content-between align-items-center my-4">
-                                    <h5 class="d-inline-block text-uppercase">Self Study</h5>
-                                    <button type="button" class="btn btn-primary btn-sm">2022</button>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5>Librarys</h5>
-                                    <p class="text-secondary">aos, tilt, vite</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5>Frameworks</h5>
-                                    <p class="text-secondary">Reactjs, Vuejs</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5>Backend Language</h5>
-                                    <p class="text-secondary">Nodejs</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-4 mb-4" data-aos="fade-up">
+            <div class="card bg-dark educards translateTop">
+              <div class="card-body">
+                <div class="row">
+                  <div
+                    class="col-12 d-flex justify-content-between align-items-center my-4"
+                  >
+                    <h5 class="d-inline-block text-uppercase">
+                      Bago University
+                    </h5>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      2016 - 2018
+                    </button>
+                  </div>
+                  <div class="col-12">
+                    <h5>1st year Distance History</h5>
+                    <p class="text-secondary">2016 - 2018</p>
+                  </div>
+                  <div class="col-12">
+                    <h5>Intakaw B.E.H.S</h5>
+                    <p class="text-secondary">
+                      study at 2014, passed University Entrance Exam
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 mb-4" data-aos="flip-up" data-aos-delay="1000">
+            <div class="card bg-dark educards translateTop">
+              <div class="card-body">
+                <div class="row">
+                  <div
+                    class="col-12 d-flex justify-content-between align-items-center my-4"
+                  >
+                    <h5 class="d-inline-block text-uppercase">
+                      Data Land Technology
+                    </h5>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      2021
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>WDF</h5>
+                    <p class="text-secondary">26/ Aug/ 2021 - 26/ May/ 2022</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>jQuery</h5>
+                    <p class="text-secondary">16/ May/ 2022 - dd/ mm/ yy</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>BCJ-1</h5>
+                    <p class="text-secondary">16/ June/ 2022 - dd/ mm/ yy</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>CSS animation</h5>
+                    <p class="text-secondary">7/ May/ 2022 - dd/ mm/ yy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mb-4" data-aos="flip-up" data-aos-delay="1000">
+            <div class="card bg-dark h-100 educards translateTop">
+              <div class="card-body">
+                <div class="row">
+                  <div
+                    class="col-12 d-flex justify-content-between align-items-center my-4"
+                  >
+                    <h5 class="d-inline-block text-uppercase">Self Study</h5>
+                    <button type="button" class="btn btn-primary btn-sm">
+                      2022
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Library</h5>
+                    <p class="text-secondary">aos, tilt, vite</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Frameworks</h5>
+                    <p class="text-secondary">Reactjs, Vuejs</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Backend Language</h5>
+                    <p class="text-secondary">Nodejs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--End education-->
     <!--Start portfolio-->
     <section id="portfolio" class="py-2">
-        <div class="container">
-            <div class="row text-center my-5">
-                <h2 class="text-primary mb-4">Portfolios</h2>
-                <p class="text-secondary fw-light">This is my creation & learing image.</p>
-            </div>
-            <ul class="list-inline text-center mb-lg-5">
-                <li class="list-inline-item projectLists btn btn-primary rounded-1" data-filter="all">All</li>
-                <li class="list-inline-item projectLists btn rounded-1" data-filter="frontend">Front-End Projects</li>
-                <li class="list-inline-item projectLists btn rounded-1" data-filter="backend">Back-End Projects</li>
-            </ul>
-            <div class="row my-5">
-                <div class="col-lg-4 mb-lg-0 mb-5" data-aos="fade-up">
-                    <div class="card bg-dark democardlarge democards filters">
-                        <img src="./assets/img/portfolio/portfolioimage1.jpg" class="card-img-top" alt="portfolio1"/>
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="card-title">Resume</h5>
-                                <a href="https://yellhtetaung.github.io/resume/" class="btn btn-danger btn-sm" target="_blank">Demo</a>
-                            </div>
-                            <p class="text-secondary mt-3">This is resume project. Containing languages HTML, CSS, Bootstrap</p>
-                            <a href="https://github.com/yellhtetaung/resume" class="btn btn-sm checkcode"><i class="fa-regular fa-circle-check text-primary"></i> Check Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="changeWidth" class="col-lg-8" data-aos="fade-up">
-                    <div class="row justify-content-lg-evenly align-items-center h-100">
-                        <div class="col-lg-5 mb-4 filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/pttsoftware-1.png" class="card-img-top" alt="pttsoftware"/>
-                                <a href="https://yellhtetaung.github.io/pttsoftware/" class="btn btn-danger rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/ioscalculator-1.png" class="card-img-top" alt="ioscalculator"/>
-                                <a href="https://yellhtetaung.github.io/ioscalculator/" class="btn btn-danger rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/colorgenerator-1.png" class="card-img-top" alt="colorgenerator"/>
-                                <a href="https://yellhtetaung.github.io/colorgenerator/" class="btn btn-primary rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/pwdgrenator-1.png" class="card-img-top" alt="passwordgrenator"/>
-                                <a href="https://yellhtetaung.github.io/passwordgenerator/" class="btn btn-primary rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 d-none filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/autotyping-1.png" class="card-img-top" alt="autotyping"/>
-                                <a href="https://yellhtetaung.github.io/autotyping/" class="btn btn-danger rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/mycontact-1.png" class="card-img-top" alt="mycontact"/>
-                                <a href="" class="btn btn-danger rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/anlogclock-1.png" class="card-img-top" alt="anlogclock"/>
-                                <a href="https://yellhtetaung.github.io/anlogclock/" class="btn btn-danger rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 d-none filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/emojirating-1.png" class="card-img-top" alt="emojirating"/>
-                                <a href="https://yellhtetaung.github.io/mycontact/" class="btn btn-primary rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 d-none filters frontend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <img src="./assets/img/portfolio/popup-1.png" class="card-img-top" alt="popup"/>
-                                <a href="https://yellhtetaung.github.io/popupbox/" class="btn btn-primary rounded-0 position-absolute" target="_blank">Demo <i class="fa-solid fa-angle-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 mb-4 d-none filters backend">
-                            <div class="card bg-dark portfolio-cards democards">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-4">Now, I am learning this</h5>
-                                    <p><i class="fa-regular fa-circle-check text-warning me-3"></i> Nodejs</p>
-                                    <p><i class="fa-regular fa-circle-check text-warning me-3"></i> Reactjs</p>
-                                    <p><i class="fa-regular fa-circle-check text-warning me-3"></i> Other server Languages</p>
-                                    <p class="text-secondary">Thank you</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row text-center my-5">
+          <h2 class="text-primary mb-4">Portfolios</h2>
+          <p class="text-secondary fw-light">
+            This is my creation & learing image.
+          </p>
         </div>
+        <ul class="list-inline text-center mb-lg-5">
+          <li
+            class="list-inline-item projectLists btn btn-primary rounded-1"
+            data-filter="all"
+          >
+            All
+          </li>
+          <li
+            class="list-inline-item projectLists btn rounded-1"
+            data-filter="frontend"
+          >
+            Front-End Projects
+          </li>
+          <li
+            class="list-inline-item projectLists btn rounded-1"
+            data-filter="backend"
+          >
+            Back-End Projects
+          </li>
+        </ul>
+        <div class="row my-5">
+          <div class="col-lg-4 mb-lg-0 mb-5" data-aos="fade-up">
+            <div class="card bg-dark democardlarge democards filters">
+              <img
+                src="./assets/img/portfolio/portfolioimage1.jpg"
+                class="card-img-top"
+                alt="portfolio1"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Resume</h5>
+                  <a
+                    href="https://yellhtetaung.github.io/resume/"
+                    class="btn btn-danger btn-sm"
+                    target="_blank"
+                    >Demo</a
+                  >
+                </div>
+                <p class="text-secondary mt-3">
+                  This is resume project. Containing languages HTML, CSS,
+                  Bootstrap
+                </p>
+                <a
+                  href="https://github.com/yellhtetaung/resume"
+                  class="btn btn-sm checkcode"
+                  ><i class="fa-regular fa-circle-check text-primary"></i> Check
+                  Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="changeWidth" class="col-lg-8" data-aos="fade-up">
+            <div class="row justify-content-lg-evenly align-items-center h-100">
+              <div class="col-lg-5 mb-4 filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/pttsoftware-1.png"
+                    class="card-img-top"
+                    alt="pttsoftware"
+                  />
+                  <a
+                    href="https://yellhtetaung.github.io/pttsoftware/"
+                    class="btn btn-danger rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/ioscalculator-1.png"
+                    class="card-img-top"
+                    alt="ioscalculator"
+                  />
+                  <a
+                    href="https://yellhtetaung.github.io/ioscalculator/"
+                    class="btn btn-danger rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/colorgenerator-1.png"
+                    class="card-img-top"
+                    alt="colorgenerator"
+                  />
+                  <a
+                    href="https://yellhtetaung.github.io/colorgenerator/"
+                    class="btn btn-primary rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/pwdgrenator-1.png"
+                    class="card-img-top"
+                    alt="passwordgrenator"
+                  />
+                  <a
+                    href="https://yellhtetaung.github.io/passwordgenerator/"
+                    class="btn btn-primary rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 d-none filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/autotyping-1.png"
+                    class="card-img-top"
+                    alt="autotyping"
+                  />
+                  <a
+                    href="https://yellhtetaung.github.io/autotyping/"
+                    class="btn btn-danger rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/mycontact-1.png"
+                    class="card-img-top"
+                    alt="mycontact"
+                  />
+                  <a
+                    href=""
+                    class="btn btn-danger rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/anlogclock-1.png"
+                    class="card-img-top"
+                    alt="anlogclock"
+                  />
+                  <a
+                    href="https://yellhtetaung.github.io/anlogclock/"
+                    class="btn btn-danger rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 d-none filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/emojirating-1.png"
+                    class="card-img-top"
+                    alt="emojirating"
+                  />
+                  <a
+                    href="https://yellhtetaung.github.io/mycontact/"
+                    class="btn btn-primary rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 d-none filters frontend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <img
+                    src="./assets/img/portfolio/popup-1.png"
+                    class="card-img-top"
+                    alt="popup"
+                  />
+                  <a
+                    href="https://yellhtetaung.github.io/popupbox/"
+                    class="btn btn-primary rounded-0 position-absolute"
+                    target="_blank"
+                    >Demo <i class="fa-solid fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="col-lg-5 mb-4 d-none filters backend">
+                <div class="card bg-dark portfolio-cards democards">
+                  <div class="card-body">
+                    <h5 class="card-title mb-4">Now, I am learning this</h5>
+                    <p>
+                      <i
+                        class="fa-regular fa-circle-check text-warning me-3"
+                      ></i>
+                      Nodejs
+                    </p>
+                    <p>
+                      <i
+                        class="fa-regular fa-circle-check text-warning me-3"
+                      ></i>
+                      Reactjs
+                    </p>
+                    <p>
+                      <i
+                        class="fa-regular fa-circle-check text-warning me-3"
+                      ></i>
+                      Other server Languages
+                    </p>
+                    <p class="text-secondary">Thank you</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--End Portfolio-->
     <!--Start Project-->
     <section id="project" class="py-4">
-        <div class="container">
-            <div class="row text-center">
-                <h2>Recent Projects</h2>
-                <p class="text-secondary">Welcome</p>
-            </div>
-            <div class="container mt-5" data-aos="fade-up">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <div class="">
-                                <div class="row g-0 justify-content-center align-items-center">
-                                    <div class="col-12 col-lg-5">
-                                        <div class="ps-lg-5 mb-5 mb-lg-0 p-0">
-                                            <img src="./assets/img/projects/landingpage.jpg" alt="" class="w-100 projectimg rounded">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-5 ps-lg-4 ps-0">
-                                        <h4 class="text-light mb-4">Landing Project</h4>
-                                        <p class="text-secondary mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                        <div class="row mb-4">
-                                            <div class="col-6">
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> HTML</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> CSS</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Javascript</h6>
-                                            </div>
-                                            <div class="col-6">
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Bootstrap 5</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Nodejs</h6>
-                                                <h6 class="text-uppercase"><i class="fa-regular fa-circle-check text-warning my-2"></i> Mysql</h6>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-warning">Coming Soon</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="">
-                                <div class="row g-0 justify-content-center align-items-center">
-                                    <div class="col-12 col-lg-5">
-                                        <div class="ps-lg-5 mb-5 mb-lg-0 p-0">
-                                            <img src="./assets/img/projects/blog.png" alt="" class="w-100 projectimg rounded">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-5 ps-lg-4 ps-0">
-                                        <h4 class="mb-4">Blog Project</h4>
-                                        <p class="text-secondary mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                        <div class="row mb-4">
-                                            <div class="col-6">
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> HTML</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> CSS</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Javascript</h6>
-                                            </div>
-                                            <div class="col-6">
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Bootstrap 5</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Reactjs</h6>
-                                                <h6 class="text-uppercase"><i class="fa-regular fa-circle-check text-warning my-2"></i> Mysql</h6>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-warning">Coming Soon</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item active">
-                            <div class="">
-                                <div class="row g-0 justify-content-center align-items-center">
-                                    <div class="col-12 col-lg-5">
-                                        <div class="ps-lg-5 mb-5 mb-lg-0 p-0">
-                                            <img src="./assets/img/projects/neflix.jpg" alt="" class="w-100 projectimg rounded">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-5 ps-lg-4 ps-0">
-                                        <h4 class="mb-4">Neflix Project</h4>
-                                        <p class="text-secondary mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                        <div class="row mb-4">
-                                            <div class="col-6">
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> HTML</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> CSS</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Javascript</h6>
-                                            </div>
-                                            <div class="col-6">
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Bootstrap 5</h6>
-                                                <h6><i class="fa-regular fa-circle-check text-warning my-2"></i> Nodejs</h6>
-                                                <h6 class="text-uppercase"><i class="fa-regular fa-circle-check text-warning my-2"></i> Vuejs</h6>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-warning">Coming Soon</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <i class="fa-solid fa-angle-left fa-2x"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <i class="fa-solid fa-angle-right fa-2x"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row text-center">
+          <h2>Recent Projects</h2>
+          <p class="text-secondary">Welcome</p>
         </div>
+        <div class="container mt-5" data-aos="fade-up">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="">
+                  <div
+                    class="row g-0 justify-content-center align-items-center"
+                  >
+                    <div class="col-12 col-lg-5">
+                      <div class="ps-lg-5 mb-5 mb-lg-0 p-0">
+                        <img
+                          src="./assets/img/projects/landingpage.jpg"
+                          alt=""
+                          class="w-100 projectimg rounded"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-5 ps-lg-4 ps-0">
+                      <h4 class="text-light mb-4">Landing Project</h4>
+                      <p class="text-secondary mb-5">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+                      <div class="row mb-4">
+                        <div class="col-6">
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            HTML
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            CSS
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Javascript
+                          </h6>
+                        </div>
+                        <div class="col-6">
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Bootstrap 5
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Nodejs
+                          </h6>
+                          <h6 class="text-uppercase">
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Mysql
+                          </h6>
+                        </div>
+                      </div>
+                      <button class="btn btn-warning">Coming Soon</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="">
+                  <div
+                    class="row g-0 justify-content-center align-items-center"
+                  >
+                    <div class="col-12 col-lg-5">
+                      <div class="ps-lg-5 mb-5 mb-lg-0 p-0">
+                        <img
+                          src="./assets/img/projects/blog.png"
+                          alt=""
+                          class="w-100 projectimg rounded"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-5 ps-lg-4 ps-0">
+                      <h4 class="mb-4">Blog Project</h4>
+                      <p class="text-secondary mb-5">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+                      <div class="row mb-4">
+                        <div class="col-6">
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            HTML
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            CSS
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Javascript
+                          </h6>
+                        </div>
+                        <div class="col-6">
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Bootstrap 5
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Reactjs
+                          </h6>
+                          <h6 class="text-uppercase">
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Mysql
+                          </h6>
+                        </div>
+                      </div>
+                      <button class="btn btn-warning">Coming Soon</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item active">
+                <div class="">
+                  <div
+                    class="row g-0 justify-content-center align-items-center"
+                  >
+                    <div class="col-12 col-lg-5">
+                      <div class="ps-lg-5 mb-5 mb-lg-0 p-0">
+                        <img
+                          src="./assets/img/projects/neflix.jpg"
+                          alt=""
+                          class="w-100 projectimg rounded"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-5 ps-lg-4 ps-0">
+                      <h4 class="mb-4">Neflix Project</h4>
+                      <p class="text-secondary mb-5">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+                      <div class="row mb-4">
+                        <div class="col-6">
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            HTML
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            CSS
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Javascript
+                          </h6>
+                        </div>
+                        <div class="col-6">
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Bootstrap 5
+                          </h6>
+                          <h6>
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Nodejs
+                          </h6>
+                          <h6 class="text-uppercase">
+                            <i
+                              class="fa-regular fa-circle-check text-warning my-2"
+                            ></i>
+                            Vuejs
+                          </h6>
+                        </div>
+                      </div>
+                      <button class="btn btn-warning">Coming Soon</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <i class="fa-solid fa-angle-left fa-2x"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <i class="fa-solid fa-angle-right fa-2x"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--End Project-->
 
     <!--start contact-->
     <section id="contact" class="py-5">
-        <div class="container">
-            <div class="row text-center mt-5">
-                <h3>Get In Touch</h3>
-                <p class="text-secondary">contact Me</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 rounded p-4 ps-5 mb-4 mb-lg-0 contactinfo" data-aos="fade-up">
-                    <h5 class="mb-5">Contact Information</h5>
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel: 09777117139" class="text-light text-decoration-none fs-6 ms-3">09-777-117-139</a>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto: yairhtet248.yha@gmail.com" class="text-light text-decoration-none fs-6 ms-3">yarihtet248.yha@gmail.com</a>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-brands fa-facebook"></i>
-                        <a href="https://www.facebook.com/yellhtet248/" class="text-light text-decoration-none fs-6 ms-3" target="_blank">Yell Htet Aung</a>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-brands fa-github"></i>
-                        <a href="https://www.github.com/yellhtetaung" class="text-light text-decoration-none fs-6 ms-3" target="_blank">yellhtetaung</a>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-brands fa-instagram"></i>
-                        <a href="https://www.instagram.com/yellhtetaung_/" class="text-light text-decoration-none fs-6 ms-3" target="_blank">yellhtetaung_</a>
-                    </div>
-                </div>
-                <div class="col-lg-8 ps-lg-5" data-aos="fade-up">
-                    <form action="">
-                        <div class="row mb-4">
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <div class="form-group">
-                                    <label for="fastname" class="form-label">First Name</label>
-                                    <input type="text" name="fastname" id="fastname" class="form-control rounded-0" placeholder="Enter your fastname" autocomplete="off"/>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="lastname" class="form-label">Last Name</label>
-                                    <input type="text" name="lastname" id="lastname" class="form-control rounded-0" placeholder="Enter your lastname" autocomplete="off"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="name" class="form-label">Email</label>
-                                    <input type="text" name="name" id="name" class="form-control rounded-0" placeholder="example@gamil.com" autocomplete="off"/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea name="message" id="message" class="form-control noborder" cols="30" rows="10" placeholder="Write here your message"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row text-center mt-5">
+          <h3>Get In Touch</h3>
+          <p class="text-secondary">contact Me</p>
         </div>
+        <div class="row">
+          <div
+            class="col-lg-4 rounded p-4 ps-5 mb-4 mb-lg-0 contactinfo"
+            data-aos="fade-up"
+          >
+            <h5 class="mb-5">Contact Information</h5>
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-phone"></i>
+              <a
+                href="tel: 09777117139"
+                class="text-light text-decoration-none fs-6 ms-3"
+                >09-777-117-139</a
+              >
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-envelope"></i>
+              <a
+                href="mailto: yairhtet248.yha@gmail.com"
+                class="text-light text-decoration-none fs-6 ms-3"
+                >yarihtet248.yha@gmail.com</a
+              >
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-brands fa-facebook"></i>
+              <a
+                href="https://www.facebook.com/yellhtet248/"
+                class="text-light text-decoration-none fs-6 ms-3"
+                target="_blank"
+                >Yell Htet Aung</a
+              >
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-brands fa-github"></i>
+              <a
+                href="https://www.github.com/yellhtetaung"
+                class="text-light text-decoration-none fs-6 ms-3"
+                target="_blank"
+                >yellhtetaung</a
+              >
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-brands fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/yellhtetaung_/"
+                class="text-light text-decoration-none fs-6 ms-3"
+                target="_blank"
+                >yellhtetaung_</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-8 ps-lg-5" data-aos="fade-up">
+            <form action="">
+              <div class="row mb-4">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <div class="form-group">
+                    <label for="fastname" class="form-label">First Name</label>
+                    <input
+                      type="text"
+                      name="fastname"
+                      id="fastname"
+                      class="form-control rounded-0"
+                      placeholder="Enter your fastname"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      class="form-control rounded-0"
+                      placeholder="Enter your lastname"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Email</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="form-control rounded-0"
+                      placeholder="example@gamil.com"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      class="form-control noborder"
+                      cols="30"
+                      rows="10"
+                      placeholder="Write here your message"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <!--end contact-->
 
     <!--footer-->
     <footer class="py-3 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h6 class="my-auto text-center text-uppercase">Zen Coding</h6>
-                </div>
-                <div class="col-md-6">
-                    <p class="my-auto text-center">Made with <i class="fa-brands fa-angellist text-warning"></i> By Yell Htet Aung</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h6 class="my-auto text-center text-uppercase">Zen Coding</h6>
+          </div>
+          <div class="col-md-6">
+            <p class="my-auto text-center">
+              Made with <i class="fa-brands fa-angellist text-warning"></i> By
+              Yell Htet Aung
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
     <!--footer-->
-
-
 
     <!--bootstrap css1 js1-->
     <script src="./assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!--jquery js1-->
-    <script src="./assets/node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script
+      src="./assets/node_modules/jquery/dist/jquery.min.js"
+      type="text/javascript"
+    ></script>
     <!--aos css1 js1-->
-    <script src="./assets/node_modules/aos/dist/aos.js" type="text/javascript"></script>
+    <script
+      src="./assets/node_modules/aos/dist/aos.js"
+      type="text/javascript"
+    ></script>
     <!--autotyped js1-->
     <script src="./assets/node_modules/typed.js/lib/typed.min.js"></script>
     <!--tilt js1-->
     <script src="./assets/node_modules/tilt.js/dest/tilt.jquery.min.js"></script>
     <!--custom js-->
     <script src="./assets/js/main.js" type="text/javascript"></script>
-</body>
+  </body>
 </html>
+
