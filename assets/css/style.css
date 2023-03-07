@@ -9,7 +9,7 @@
     --primary-pink: #ff304f;
 }
 
-body{
+html,body{
     font-family: var(--font-poppins);
     font-size: 15px;
     background: #020202;
